@@ -1,14 +1,13 @@
 # **Aerocode**
-Avaliação AV2 — Professor Eng. Dr. Gerson Penha
+Avaliação AV2 — Professor Gerson da Penha
 
 Material: Técnicas de Programação I
 
 Nome: Vinícius Silva Lopes
 
-Este é o sistema da Aerocode na sua segunda versão — desta vez desenvolvido como uma aplicação web completa (SPA) utilizando **React** com **TypeScript**. Em vez do terminal, agora tudo acontece no navegador: login com controle de permissão por perfil, navegação entre telas, visualização de frotas, equipes, relatórios e etapas de produção de aeronaves.
+Este é o sistema da Aerocode na sua segunda avaliação, feito apenas como um mockup para terceira avaliação — desta vez desenvolvido como uma aplicação web completa (SPA) utilizando **React** com **TypeScript**. Em vez do terminal, agora tudo acontece no navegador.
 
-O projeto foi construído com **Vite** como bundler, **CSS Modules** para estilização isolada por componente e uma estrutura de pastas organizada por página — cada tela tem seus próprios arquivos `.tsx` e `.module.css`. Não há backend nem banco de dados real: os dados são simulados diretamente no front-end, tornando o sistema leve e fácil de rodar em qualquer máquina.
-
+O projeto foi construído com **Vite** como bundler, **CSS Modules** para estilização isolada por componente e uma estrutura de pastas organizada por página — cada tela tem seus próprios arquivos `.tsx` e `.module.css`. Não há backend nem banco de dados real, os dados são simulados diretamente no front-end.
 ## **Árvore do projeto**
 
 Antes de seguir qualquer passo abaixo, confira se a estrutura do projeto está exatamente assim na sua máquina. Qualquer arquivo fora do lugar pode gerar erros inesperados na hora de rodar.
