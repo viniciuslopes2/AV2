@@ -15,9 +15,9 @@ function resultadoBadge(resultado: string): string {
 }
 
 function tipoIcon(tipo: string): string {
-  if (tipo === 'Elétrico') return '⚡';
-  if (tipo === 'Hidráulico') return '💧';
-  return '🌬️';
+  if (tipo === 'Elétrico') return '';
+  if (tipo === 'Hidráulico') return '';
+  return '';
 }
 
 function modeloByCode(codigo: string): string {
