@@ -55,8 +55,8 @@ export const MOCK_AERONAVES: Aeronave[] = [
 ];
 
 export const MOCK_ETAPAS: Etapa[] = [
-  { id: '1', nome: 'Montagem da Fuselagem', prazo: '2025-03-15', responsavel: 'Ana Ferreira', status: 'Concluído' },
-  { id: '2', nome: 'Instalação Elétrica', prazo: '2025-04-30', responsavel: 'Pedro Nascimento', status: 'Andamento' },
+  { id: '1', nome: 'Montagem da Fuselagem', prazo: '2025-03-15', responsavel: 'Vinícius Lopes', status: 'Concluído' },
+  { id: '2', nome: 'Instalação Elétrica', prazo: '2025-04-30', responsavel: 'Fulano', status: 'Andamento' },
   { id: '3', nome: 'Pintura e Acabamento', prazo: '2025-05-30', responsavel: 'Não atribuído', status: 'Pendente' },
 ];
 

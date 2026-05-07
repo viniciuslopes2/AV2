@@ -1,5 +1,7 @@
 import React from 'react';
 import styles from './login.module.css';
+import bgAviao from '../../assets/bg-aviao.png';
+import logo from '../../assets/logo.png';
 
 interface LoginProps {
   onLogin: () => void;
@@ -15,7 +17,7 @@ export default function Login({ onLogin }: LoginProps) {
     <div
       className={styles.container}
       style={{
-        backgroundImage: 'url("/src/assets/bg-aviao.png")',
+        backgroundImage: `url(${bgAviao})`,
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         backgroundRepeat: 'no-repeat'
@@ -23,7 +25,7 @@ export default function Login({ onLogin }: LoginProps) {
     >
       <div className={styles.card}>
         <div className={styles.logoArea}>
-          <img src="/src/assets/logo.png" alt="AeroCODE Logo" style={{ height: '70px', width: 'auto', marginBottom: '12px' }} />
+          <img src={logo} alt="AeroCODE Logo" style={{ height: '70px', width: 'auto', marginBottom: '12px' }} />
           <div className={styles.tagline}>Sistema de Gestão Aeronáutica</div>
         </div>
 
