@@ -25,7 +25,7 @@ export default function Login({ onLogin }: LoginProps) {
     >
       <div className={styles.card}>
         <div className={styles.logoArea}>
-          <img src={logo} alt="AeroCODE Logo" style={{ height: '70px', width: 'auto', marginBottom: '12px' }} />
+          <img src={logo} alt="AeroCODE Logo" style={{ height: '100px', width: 'auto', marginBottom: '12px' }} />
           <div className={styles.tagline}>Sistema de Gestão Aeronáutica</div>
         </div>
 
