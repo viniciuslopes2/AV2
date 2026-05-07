@@ -1,0 +1,159 @@
+.pageHeader {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: 24px;
+}
+
+.pageTitle {
+  font-size: 22px;
+  font-weight: 800;
+  letter-spacing: -0.4px;
+  color: var(--text-1);
+}
+
+.pageSubtitle {
+  font-size: 13px;
+  color: var(--text-2);
+  margin-top: 3px;
+}
+
+.formCard {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 24px;
+  margin-bottom: 20px;
+}
+
+.formGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.label {
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--text-2);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.input {
+  width: 100%;
+  height: 44px;
+  border: 1.5px solid var(--border);
+  border-radius: 9px;
+  padding: 0 14px;
+  font-size: 14px;
+  font-family: inherit;
+  color: var(--text-1);
+  background: var(--card);
+  outline: none;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.input:focus {
+  border-color: var(--primary);
+  box-shadow: 0 0 0 3px rgba(122, 140, 232, 0.12);
+}
+
+.input:disabled {
+  background: #f9fafb;
+  color: var(--text-3);
+  cursor: not-allowed;
+}
+
+.errorMsg {
+  font-size: 13px;
+  color: var(--red);
+  margin-bottom: 16px;
+  font-weight: 500;
+}
+
+.noPermMsg {
+  font-size: 13px;
+  color: var(--text-3);
+  font-style: italic;
+}
+
+.gerarBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 22px;
+  background: var(--primary);
+  color: #fff;
+  border: none;
+  border-radius: 9px;
+  font-size: 14px;
+  font-weight: 700;
+  font-family: inherit;
+  cursor: pointer;
+  transition: background 0.15s;
+}
+
+.gerarBtn:hover { background: var(--primary-dark); }
+
+.reportCard {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  overflow: hidden;
+}
+
+.reportHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 20px;
+  border-bottom: 1px solid var(--border);
+}
+
+.reportTitle {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--text-1);
+}
+
+.reportBadge {
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--primary);
+  background: var(--primary-light);
+  padding: 3px 10px;
+  border-radius: 20px;
+}
+
+.reportBody {
+  font-family: 'Courier New', 'Courier', monospace;
+  font-size: 12.5px;
+  line-height: 1.8;
+  color: var(--text-1);
+  background: #fafafa;
+  padding: 24px;
+  margin: 0;
+  white-space: pre-wrap;
+  word-break: break-word;
+  overflow-x: auto;
+}
+
+/* ── Responsive ───────────────────────────────────────── */
+@media (max-width: 768px) {
+  .formGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .reportBody {
+    font-size: 11px;
+    padding: 16px;
+  }
+}

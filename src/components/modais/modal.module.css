@@ -1,0 +1,161 @@
+.overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(16, 24, 40, 0.5);
+  backdrop-filter: blur(4px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+  animation: fadeIn 0.15s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.modalBox {
+  background: var(--card);
+  width: 100%;
+  max-width: 500px;
+  max-height: calc(100vh - 64px);
+  overflow-y: auto;
+  border-radius: 20px;
+  padding: 28px;
+  box-shadow: 0 24px 64px rgba(0, 0, 0, 0.18);
+  position: relative;
+  animation: slideUp 0.2s ease;
+}
+
+@keyframes slideUp {
+  from { opacity: 0; transform: translateY(12px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.closeButton {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 32px;
+  height: 32px;
+  border-radius: 8px;
+  border: 1.5px solid var(--border);
+  background: var(--card);
+  color: var(--text-2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background 0.15s, color 0.15s;
+}
+
+.closeButton:hover {
+  background: var(--red-bg);
+  color: var(--red);
+  border-color: var(--red-bg);
+}
+
+.title {
+  font-size: 17px;
+  font-weight: 800;
+  color: var(--text-1);
+  letter-spacing: -0.3px;
+  margin-bottom: 24px;
+  padding-right: 40px;
+}
+
+.formGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.inputGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.fullWidth { grid-column: 1 / -1; }
+
+.label {
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--text-2);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.input {
+  width: 100%;
+  height: 44px;
+  border: 1.5px solid var(--border);
+  border-radius: 9px;
+  padding: 0 14px;
+  font-size: 14px;
+  font-family: inherit;
+  color: var(--text-1);
+  background: var(--card);
+  outline: none;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.input:focus {
+  border-color: var(--primary);
+  box-shadow: 0 0 0 3px rgba(122, 140, 232, 0.12);
+}
+
+.textarea {
+  width: 100%;
+  border: 1.5px solid var(--border);
+  border-radius: 9px;
+  padding: 11px 14px;
+  font-size: 14px;
+  font-family: inherit;
+  color: var(--text-1);
+  background: var(--card);
+  outline: none;
+  transition: border-color 0.2s, box-shadow 0.2s;
+  resize: vertical;
+  min-height: 88px;
+}
+
+.textarea:focus {
+  border-color: var(--primary);
+  box-shadow: 0 0 0 3px rgba(122, 140, 232, 0.12);
+}
+
+.submitBtn {
+  width: 100%;
+  height: 46px;
+  background: var(--primary);
+  color: #fff;
+  border: none;
+  border-radius: 9px;
+  font-size: 14px;
+  font-weight: 700;
+  font-family: inherit;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  transition: background 0.2s;
+}
+
+.submitBtn:hover { background: var(--primary-dark); }
+
+/* ── Responsive ───────────────────────────────────────── */
+@media (max-width: 768px) {
+  .modalBox {
+    width: 95%;
+    padding: 20px;
+    max-height: 88vh;
+  }
+
+  .formGrid {
+    grid-template-columns: 1fr;
+  }
+}

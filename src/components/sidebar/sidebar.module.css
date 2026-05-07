@@ -1,0 +1,180 @@
+.sidebar {
+  width: var(--sidebar-w);
+  background: var(--card);
+  border-right: 1px solid var(--border);
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  z-index: 10;
+}
+
+.logoArea {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 14px 16px;
+  border-bottom: 1px solid var(--border);
+  flex-shrink: 0;
+}
+
+.logoImg {
+  height: 40px;
+  width: auto;
+  object-fit: contain;
+}
+
+.nav {
+  flex: 1;
+  padding: 10px 8px;
+  overflow-y: auto;
+}
+
+.sectionLabel {
+  font-size: 10px;
+  font-weight: 700;
+  color: var(--text-3);
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+  padding: 10px 10px 4px;
+  margin-top: 2px;
+  display: block;
+}
+
+.navItem {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  padding: 9px 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-bottom: 1px;
+  color: var(--text-2);
+  font-size: 13.5px;
+  font-weight: 500;
+  background: transparent;
+  border: none;
+  width: 100%;
+  text-align: left;
+  font-family: inherit;
+  transition: background 0.12s, color 0.12s;
+}
+
+.navItem:hover {
+  background: var(--bg);
+  color: var(--text-1);
+}
+
+.navItemActive {
+  background: var(--primary-light) !important;
+  color: var(--primary) !important;
+  font-weight: 600;
+}
+
+.footer {
+  padding: 10px 8px;
+  border-top: 1px solid var(--border);
+  flex-shrink: 0;
+}
+
+.userRow {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  padding: 8px 10px;
+  margin-bottom: 2px;
+}
+
+.userAvatar {
+  width: 32px;
+  height: 32px;
+  background: var(--primary-light);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--primary);
+  flex-shrink: 0;
+}
+
+.userName {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--text-1);
+}
+
+.userRole {
+  font-size: 11px;
+  color: var(--text-3);
+}
+
+.logoutItem {
+  color: var(--red) !important;
+}
+
+.logoutItem:hover {
+  background: var(--red-bg) !important;
+}
+
+/* ── Mobile ───────────────────────────────────────────── */
+@media (max-width: 768px) {
+  .sidebar {
+    transform: translateX(-100%);
+    transition: transform 0.25s ease;
+    z-index: 200;
+  }
+
+  .mobileOpen {
+    transform: translateX(0);
+  }
+}
+
+.roleSwitch {
+  padding: 8px 10px 4px;
+  margin-bottom: 6px;
+}
+
+.roleSwitchLabel {
+  font-size: 9.5px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.7px;
+  color: var(--text-3);
+  display: block;
+  margin-bottom: 6px;
+}
+
+.roleBtns {
+  display: flex;
+  gap: 4px;
+}
+
+.roleBtn {
+  flex: 1;
+  padding: 5px 4px;
+  border-radius: 6px;
+  border: 1px solid var(--border);
+  background: transparent;
+  color: var(--text-2);
+  font-size: 11px;
+  font-weight: 600;
+  cursor: pointer;
+  font-family: inherit;
+  transition: all 0.12s;
+  white-space: nowrap;
+}
+
+.roleBtn:hover {
+  background: var(--bg);
+  color: var(--text-1);
+}
+
+.roleBtnActive {
+  background: var(--primary-light) !important;
+  color: var(--primary) !important;
+  border-color: var(--primary-light) !important;
+}
